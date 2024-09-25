@@ -13,3 +13,30 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 Base = declarative_base()
 
+
+from sqlalchemy import Column, Integer, String,Boolean,DateTime
+import datetime 
+
+
+class StudentModel(Base):
+    __tablename__ = "students"
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    name = Column(String)
+    
+    def __str__(self):
+        return f"{self.id } - {self.name}"
+
+
+# Dependency
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+        
+        
+def initiate_database():
+    
+    Base.metadata.create_all(bind=engine)
