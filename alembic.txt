@@ -15,5 +15,11 @@ sqlalchemy.url = sqlite:///./sqlite.db
 from models import Base
 target_metadata = Base.metadata
 
-5 # create model for track database 
+5 # create model for track database make migrations
 alembic revision --autogenerate -m "created student model"
+
+6 # migrate to database
+alembic upgrade heads
+
+7 # downgrade-reverse
+alembic downgrade 'tag' or 00000000
