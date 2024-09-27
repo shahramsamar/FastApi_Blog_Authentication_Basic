@@ -87,7 +87,7 @@ db.commit()
 # db.delete(task_obj)
 # db.commit()
 
-
+# for check database to initiate 
 # def initiate_database():
 #     Base.metadata.create_all(bind=engine)
 
