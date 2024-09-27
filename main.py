@@ -6,7 +6,7 @@ from datetime import datetime
 from pydantic import BaseModel
 
 from sqlalchemy.orm import Session
-from core.database import get_db,initiate_database,StudentModel
+from core.database import get_db, initiate_database, StudentModel
 
 app = FastAPI()
 

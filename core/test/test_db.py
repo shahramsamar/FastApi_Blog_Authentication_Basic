@@ -37,11 +37,11 @@ Base.metadata.create_all(bind=engine)
 db = SessionLocal()
 
 # Create a new task object
-# task_obj = Task(title="al")
+task_obj = Task(title="No 2")
 
 # Add and commit the new task
-# db.add(task_obj)
-# db.commit()
+db.add(task_obj)
+db.commit()
 
 # Optional: refresh the object to reflect the committed state
 # db.refresh(task_obj)
@@ -80,7 +80,7 @@ db = SessionLocal()
 # db.refresh(task_obj)
 
 
-# # deleting object
+# deleting object
 # task_obj  = db.query(Task).filter(Task.id==5).one_or_none()
 # print(task_obj)
 
