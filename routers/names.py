@@ -5,7 +5,8 @@ from typing import Optional,List
 import random
 from datetime import datetime
 from sqlalchemy.orm import Session
-from core.config.database import get_db, StudentModel
+from core.config.database import get_db
+from models  import StudentModel
 from schemas.names import NamesSchema, ResponseNamesSchema
 
 

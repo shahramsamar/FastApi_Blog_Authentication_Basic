@@ -3,7 +3,6 @@ from sqlalchemy.orm import sessionmaker
 import datetime
 from core.config.database import Base
 
-
 # Define Task model
 class StudentModel(Base):
     __tablename__ = "Students"
