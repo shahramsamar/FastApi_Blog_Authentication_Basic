@@ -14,10 +14,6 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
 
 
-
-from core.config.database import Base
-
-
 # Define Task model
 class StudentModel(Base):
     __tablename__ = "Students"
