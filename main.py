@@ -19,9 +19,9 @@ app = FastAPI(
 
 
 
-@app.on_event("startup")
-async def startup_event():
-    initiate_database()
+# @app.on_event("startup")
+# async def startup_event():
+#     initiate_database()
 
 
 

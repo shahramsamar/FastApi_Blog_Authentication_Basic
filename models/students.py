@@ -1,5 +1,4 @@
-from sqlalchemy import create_engine, Column, Integer, String, Boolean, DateTime
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy import  Column, Integer, String, Boolean, DateTime
 import datetime
 from core.config.database import Base
 
@@ -16,3 +15,6 @@ class StudentModel(Base):
 
     def __str__(self):
         return f"{self.id} - {self.name}"
+
+
+
