@@ -1,7 +1,7 @@
 from fastapi import FastAPI
-from core.config.database import initiate_database
+from core.config_database.database import initiate_database
 from routers.names import router as names_router
-from core.config.meta_tags import tags_metadata
+from core.config_database.meta_tags import tags_metadata
 app = FastAPI(
               title="Simple Blog Api ",
               description="this is a simple blog app with minimal usage of authentications and post managing",
