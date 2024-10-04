@@ -1,8 +1,9 @@
 from sqlalchemy import Column, String, DateTime, Enum, Integer
 import datetime, bcrypt
-from sqlalchemy.orm import  declarative_base
+from core.config_database.database import Base
 
-Base = declarative_base()
+
+
 
 class Users(Base):
     __tablename__ = "users"

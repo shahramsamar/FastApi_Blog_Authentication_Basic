@@ -2,6 +2,7 @@ from sqlalchemy import  Column, Integer, String, Boolean, DateTime
 import datetime
 from core.config_database.database import Base
 
+
 # Define Task model
 class StudentModel(Base):
     __tablename__ = "Students"
