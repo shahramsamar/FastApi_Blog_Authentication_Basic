@@ -1,6 +1,6 @@
 tags_metadata =[
     {
-        "name": "Names",
+        "name": "Authentication",
         "description":"a simple crud application based on names"
     }
 ]
