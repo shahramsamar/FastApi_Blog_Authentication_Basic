@@ -1,7 +1,7 @@
 from fastapi import FastAPI
-from core.config_database.database import initiate_database
-from routers.names import router as names_router
-from core.config_database.meta_tags import tags_metadata
+from database.database import initiate_database
+from routers.blog import router as blog_router
+from database.meta_tags import tags_metadata
 app = FastAPI(
               title="Simple Blog Api ",
               description="this is a simple blog app with minimal usage of authentications and post managing",
@@ -17,12 +17,4 @@ app = FastAPI(
               docs_url="/",
             )
 
-
-
-# @app.on_event("startup")
-# async def startup_event():
-#     initiate_database()
-
-
-
-app.include_router(names_router)
+app.include_router(blog_router)
